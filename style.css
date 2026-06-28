@@ -61,11 +61,11 @@ body{
     width:420px;
 }
 
-.box:nth-child(2){
-    margin-left:45px;
+.box2{
+    margin-left:40px;
 }
 
-.box:nth-child(3){
+.box3{
     margin-left:90px;
 }
 
@@ -91,11 +91,11 @@ body{
     flex:1;
 }
 
-.card:nth-child(2){
+.card2{
     margin-top:20px;
 }
 
-.card:nth-child(3){
+.card3{
     margin-top:40px;
 }
 
@@ -124,53 +124,60 @@ body{
     font-size:17px;
 }
 
+
+
 /* Mobile */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-    body{
-        padding:25px;
+    body {
+        padding: 25px;
     }
 
-    .container{
-        width:100%;
+    .container {
+        width: 100%;
+        max-width: 100%;
     }
 
-    .top{
-        flex-direction:column;
-        text-align:center;
+    .top {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .intro{
-        width:100%;
-        margin-bottom:40px;
+    .intro {
+        width: 100%;
+        margin-bottom: 40px;
     }
 
-    .intro h1{
-        font-size:40px;
+    .intro h1 {
+        font-size: 32px;
     }
 
-    .boxes{
-        width:100%;
+    .boxes {
+        width: 100%;
     }
 
-    .box{
-        width:100%;
-        margin-left:0 !important;
-        flex-direction:column;
-        gap:12px;
+    .box {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        text-align: center;
     }
 
-    .cards{
-        flex-direction:column;
+    .cards {
+        flex-direction: column;
     }
 
-    .card{
-        margin-top:0 !important;
+    .card {
+        margin-top: 0;
+        text-align: center;
     }
 
     .card h3,
-    .card span{
-        margin-left:60px;
+    .card span {
+        margin-left: 0;
+        text-align: center;
     }
 }
