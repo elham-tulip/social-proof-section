@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'League Spartan',sans-serif;
+    background:hsl(0, 0%, 100%);
+    color:hsl(300, 43%, 22%);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+}
+
+.container{
+    width:1200px;
+
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:70px;
+}
+
+.intro{
+    width:40%;
+}
+
+.intro h1{
+    font-size:55px;
+    line-height:0.9;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.intro p{
+    color:hsl(303, 10%, 53%);
+    font-size:18px;
+    line-height:1.6;
+}
+
+.boxes{
+    width:48%;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.box{
+    background:hsl(300, 24%, 96%);
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding:18px 30px;
+    border-radius:8px;
+    width:420px;
+}
+
+.box:nth-child(2){
+    margin-left:45px;
+}
+
+.box:nth-child(3){
+    margin-left:90px;
+}
+
+.box img{
+    margin-right:3px;
+}
+
+.box p{
+    font-weight:700;
+    color:hsl(300, 43%, 22%);
+}
+
+.cards{
+    display:flex;
+    gap:30px;
+}
+
+.card{
+    background:hsl(300, 43%, 22%);
+    color:white;
+    padding:35px;
+    border-radius:10px;
+    flex:1;
+}
+
+.card:nth-child(2){
+    margin-top:20px;
+}
+
+.card:nth-child(3){
+    margin-top:40px;
+}
+
+.card img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+.card h3{
+    margin-left:60px;
+    margin-top:-45px;
+    font-size:18px;
+}
+
+.card span{
+    display:block;
+    margin-left:60px;
+    margin-top:5px;
+    color:hsl(333, 80%, 67%);
+}
+
+.card p{
+    margin-top:30px;
+    line-height:1.6;
+    font-size:17px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    body{
+        padding:25px;
+    }
+
+    .container{
+        width:100%;
+    }
+
+    .top{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .intro{
+        width:100%;
+        margin-bottom:40px;
+    }
+
+    .intro h1{
+        font-size:40px;
+    }
+
+    .boxes{
+        width:100%;
+    }
+
+    .box{
+        width:100%;
+        margin-left:0 !important;
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .card{
+        margin-top:0 !important;
+    }
+
+    .card h3,
+    .card span{
+        margin-left:60px;
+    }
+}
